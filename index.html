@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Gloria+Hallelujah&family=Inter:wght@200&family=Jacques+Francois+Shadow&family=Montserrat:wght@100&family=Open+Sans&family=Pacifico&family=Permanent+Marker&family=Shadows+Into+Light&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
+  <title>Apple</title>
+
+</head>
+
+<body>
+  <div class="fullscreen">
+    <div class="full">
+      <!-- navbar -->
+      <div class="section ">
+        <nav style="
+  font-weight: 300; height: 50px;opacity: 0.7;font-size: small;" class="navbar fixed-top navbar-expand-lg bg-black ">
+          <div class="container ">
+            <a class="navbar-brand" href="#">
+              <img
+                src="data:image/png;base64,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"
+                alt="Bootstrap" width="20" height="18 ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item ">
+                  <a class="nav-link text-white ms-3" aria-current="page" href="#">Store</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">Mac</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">ipad</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">iphone</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">Watch</a>
+                </li>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">vision</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">Airpods</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">TV & Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">Accessories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white ms-3" href="#">Support</a>
+                </li>
+
+              </ul>
+              <i class="fa-solid fa-magnifying-glass me-5" style="color: #f8f7f7;"></i>
+              <i class="fa-solid fa-bag-shopping me-5" style="color: #f5f7fa;"></i>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+      <!-- first section -->
+      <div class="mac">
+        <h1 style="color: #000000;" class="iphone">MacBook Pro</h1>
+        <div>
+          <h3 style="color: #000000;" class="Titanium">Mind-blowing. Head-Turning.</h3>
+        </div>
+        <div class="text">
+          <a class="link" href="">
+            <h4 class="blue">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #2997ff;"></i></h4>
+          </a>
+          <a class="link" href="">
+            <h4 class="blue"> Buy <i class="fa-solid fa-greater-than fa-2xs " style="color: #2997ff;"></i></h4>
+          </a>
+        </div>
+
+      </div>
+      <div class="break">
+
+      </div>
+      <div class="imac">
+        <h1 style="color: #000000;" class="iphone">iMac</h1>
+        <div>
+          <h3 style="color: #000000;" class="Titanium">Packed with more juice.</h3>
+        </div>
+        <div class="text">
+          <a class="link" href="">
+            <h4 class="blue">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #2997ff;"></i></h4>
+          </a>
+          <a class="link" href="">
+            <h4 class="blue"> Buy <i class="fa-solid fa-greater-than fa-2xs " style="color: #2997ff;"></i></h4>
+          </a>
+        </div>
+
+      </div>
+      <div class="break">
+
+      </div>
+      <div class="image ">
+        <h1 class="iphone">iPhone 15 Pro</h1>
+        <div>
+          <h3 class="Titanium">Titanium.So Strong.So ight.So Pro.</h3>
+        </div>
+        <div class="text">
+          <a class="link" href="">
+            <h4 class="blue">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #2997ff;"></i></h4>
+          </a>
+          <a class="link" href="">
+            <h4 class="blue"> Buy <i class="fa-solid fa-greater-than fa-2xs " style="color: #2997ff;"></i></h4>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- break -->
+    <div class="break">
+
+    </div>
+    <div style="width: 100%;height: 620px;background-color: #ffffff; ;">
+      <div class="row iw">
+
+        
+          <div class="col-lg-5 md-6 sm-12 iphone15">
+            <h1 class="phone">iPhone 15</h1>
+            <h3 class="new">New camera. New design. Newphoria.</h3>
+            <div class="more">
+              <a class="one" href="">
+                <h4 class="blue1">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #06c"></i></h4>
+              </a>
+              <a class="one" href="">
+                <h4 class="blue1"> Buy <i class="fa-solid fa-greater-than fa-2xs " style="color: #06c"></i></h4>
+              </a>
+            </div>
+          </div>
+        
+        <div class="col-lg-5 md-g sm-12 wonder">
+          <h1 class="phone">Wonder Awaits</h1>
+            <h3 class="new">Give the gifts they've been <br> looking forward to all year</h3>
+            <div class="more">
+              <a class="one" href="">
+                <h4 style="padding-left: 5rem;" class="blue1">Shop <i class="fa-solid fa-greater-than fa-2xs" style="color: #06c;"></i></h4>
+              </a>
+              
+        </div>
+      </div>
+    </div>
+    <div class="row iy">
+      <div class="col-lg-5 md-6 sm-12 iwatch">
+        <div style="padding-top: 3rem;"><h1  class="iwatchtext"><i class="fa-brands fa-apple" style="color: #ffffff;"></i> WATCH</h1></div>
+        <p style="text-align: center;color: rgb(156, 41, 41); font-weight: 600;font-size: smaller;">S E R I E S 9</p>
+        <h3 style="color: white;font-weight: 400;font-size: 20px;" class="new">Smarter. Brighter. Mightier.</h3>
+        <div class="more">
+          <a class="one" href="">
+            <h4 class="blue1">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #2997ff;"></i></h4>
+          </a>
+          <a class="one" href="">
+            <h4 class="blue1"> Buy <i class="fa-solid fa-greater-than fa-2xs " style="color:#2997ff;"></i></h4>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 md-g sm-12 airpods">
+        <div style="padding-top: 3rem;"><h1 style="font-weight: bold;font-size: 45px;" class="iwatchtext"> AirPods Pro</h1></div>
+        
+        <h3 style="color: white;font-weight: 400;font-size: 20px;" class="new">Adaptive audio. Now Playing.</h3>
+        <div class="more">
+          <a class="one" href="">
+            <h4 class="blue1">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #2997ff;"></i></h4>
+          </a>
+          <a class="one" href="">
+            <h4 class="blue1"> Buy <i class="fa-solid fa-greater-than fa-2xs " style="color:#2997ff;"></i></h4>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row iz">
+      <div style="padding-top: 3rem;" class="col-lg-5 md-6 sm-12 card">
+        <h1 class="phone"><i class="fa-brands fa-apple" style="color: #000000;"></i>Card</h1>
+            <h3 class="new">Get upto 3% Daily <br>Cashback with evry purchase.</h3>
+            <div class="more">
+              <a class="one" href="">
+                <h4 class="blue1">Learn more <i class="fa-solid fa-greater-than fa-2xs" style="color: #06c"></i></h4>
+              </a>
+              <a class="one" href="">
+                <h4 class="blue1"> Apply now <i class="fa-solid fa-greater-than fa-2xs " style="color: #06c"></i></h4>
+              </a>
+            </div>
+      </div>
+      <div style="padding-top: 3rem;" class="col-lg-5 md-g sm-12 trade">
+        <h1 class="phone"><i class="fa-brands fa-apple" style="color: #000000;"></i>Trade In</h1>
+            <h3 class="new">Get $200 to $650 in credit when  <br>you trade in iPhone 11 or higher</h3>
+            <div class="see">
+              <a class="one" href="">
+                <h4  class="blue1">See what your device is worth <i class="fa-solid fa-greater-than fa-2xs" style="color: #06c"></i></h4>
+              </a>
+              
+            </div>
+      </div>
+    </div>
+    <div class="break">
+
+    </div>
+    <div style="background-color: rgb(244, 247, 249);" class="footer-clean">
+      <footer>
+          <div class="container">
+            <p class="para">1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</p>
+            <p class="para">To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+            <p class="para">If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+            </p>
+            <p class="para">Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.
+            </p>
+            <p class="para">A subscription is required for Apple TV+.
+            </p>
+            <hr>
+              <div class="row justify-content-center">
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>Services</h3>
+                      <ul>
+                          <li><a href="#">Web design</a></li>
+                          <li><a href="#">Development</a></li>
+                          <li><a href="#">Hosting</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>About</h3>
+                      <ul>
+                          <li><a href="#">Company</a></li>
+                          <li><a href="#">Team</a></li>
+                          <li><a href="#">Legacy</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>Careers</h3>
+                      <ul>
+                          <li><a href="#">Job openings</a></li>
+                          <li><a href="#">Employee success</a></li>
+                          <li><a href="#">Benefits</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                      <p class="copyright">Apple© </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</html>
